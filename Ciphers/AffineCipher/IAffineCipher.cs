@@ -2,7 +2,7 @@
 
 public interface IAffineCipher
 {
-    string Encrypt(char[] message, int firstKey, int secondKey);
+    string Encrypt(string text, int a, int b);
     string Decrypt(string cipherText, int firstKey, int secondKey);
     string CipherType();
 }

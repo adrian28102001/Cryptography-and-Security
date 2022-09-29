@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1", "Lab1\Lab1.csproj", "{917B3ED1-C9E6-4C13-8B93-A2AA24E77668}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ciphers", "Ciphers\Ciphers.csproj", "{917B3ED1-C9E6-4C13-8B93-A2AA24E77668}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

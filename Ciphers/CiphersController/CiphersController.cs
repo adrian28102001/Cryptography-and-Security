@@ -28,8 +28,8 @@ public class CiphersController : ICiphersController
 
 
         const int firstAffineKey = 3;
-        const int secondAffineKey = 4;
-        var affineEncrypt = _affineCipher.Encrypt(textToEncrypt.ToCharArray(), firstAffineKey, secondAffineKey);
+        const int secondAffineKey = 1;
+        var affineEncrypt = _affineCipher.Encrypt(textToEncrypt, firstAffineKey, secondAffineKey);
         var affineDecrypt = _affineCipher.Decrypt(affineEncrypt, firstAffineKey, secondAffineKey);
         Print(textToEncrypt, firstAffineKey +","+ secondAffineKey, _affineCipher.CipherType(), affineEncrypt,
             affineDecrypt);
