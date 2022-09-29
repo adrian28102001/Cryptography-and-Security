@@ -19,7 +19,7 @@ Cipher keys come in two varieties: symmetric/private keys and asymmetric/public 
 
 While the sender and recipient are aware of the key in symmetric key systems, it is computationally impossible to figure
 out the decryption
-key in public key systems if it is not already known. Thsere are more options and older symmetric key schemes.
+key in public key systems if it is not already known. There are more options and older symmetric key schemes.
 The substitution cipher was the first significant symmetric key system.
 
 - The Caesar shift cipher, used by Julius Caesar, was one of the first substitution ciphers.
@@ -50,7 +50,7 @@ The substitution cipher was the first significant symmetric key system.
 - Vigenere cipher,
 - Playfair cipher.
 
-3. Structure the project in methods/classes/packages as neeeded.
+3. Structure the project in methods/classes/packages as needed.
    The last one is Playfair cipher.
    It is the same as a traditional cipher. The only difference is that it
    encrypts a digraph (a pair of two letters) instead of a single letter.
@@ -67,12 +67,12 @@ letters and slides it to LEFT by the number of positions of the secret shift.
 
 The plaintext letter is then encrypted to the ciphertext letter on the sliding ruler underneath. The result of this
 process is depicted in the following illustration for an agreed shift of three positions. In this case, the plaintext
-‘tutorial’ is encrypted to the ciphertext ‘wxwruldo’. Here is the ciphertext alphabet for a Shift of 3 −
+‘Adrian’ is encrypted to the ciphertext ‘Ehvmer’. Here is the ciphertext alphabet for a Shift of 3 −
 On receiving the ciphertext, the receiver who also knows the secret shift, positions his sliding ruler underneath the
 ciphertext alphabet and slides it to RIGHT by the agreed shift number, 3 in this case.
 
 He then replaces the ciphertext letter by the plaintext letter on the sliding ruler underneath. Hence the ciphertext
-‘wxwruldo’ is decrypted to ‘tutorial’. To decrypt a message encoded with a Shift of 3, generate the plaintext alphabet
+‘Ehvmer’ is decrypted to ‘Adrian’. To decrypt a message encoded with a Shift of 3, generate the plaintext alphabet
 using a shift of ‘-3’ as shown below −
 
 ```csharp
@@ -480,6 +480,7 @@ return (a % b + b) % b;
 ````
 
 Output
+
 ````
 Key: cipher
 Text encrypted for Playfair Cypher: Bfacfk
@@ -575,9 +576,19 @@ return (a % b + b) % b;
 ````
 
 Output
+
 ````
 Initial text: Adrian
 Key: cipher
 Text encrypted for Vigenere cipher: Clgpee
 Text decrypted for Vigenere cipher: Adrian
 ````
+Conclusion
+
+To sum up, cryptography is a study and
+practice of hiding information. In this laboratory work some famous classical substitution ciphers including Affine,
+Caesar, Viginere, Playfair cipher have been implemented. Traditional cryptography is based on mathematics and relies on
+how difficult it is to factor huge numbers computationally. The high level of complexity of the mathematical issue for
+the huge number factorization is the foundation for the security of classical cryptography. By using a key-space
+brute-force search, traditional ciphers can be cracked. Even so those ciphers can be broken using the brute-force
+attack.
