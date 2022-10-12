@@ -1,5 +1,5 @@
 ﻿using Lab1.CipherInterface;
-using Lab1.Ciphers;
+using Lab1.CiphersController;
 
 namespace Lab1;
 
@@ -22,7 +22,7 @@ public class Program
 
         var program =
             new Program(
-                new CiphersController(new CaesarCipher.CaesarCipher(), new AffineCipher.AffineCipher(), ciphers));
+                new CiphersController.CiphersController(new CaesarCipher.CaesarCipher(), new AffineCipher.AffineCipher(), ciphers));
         
         program._ciphersController.RunCiphers();
     }

@@ -2,7 +2,7 @@
 using Lab1.CaesarCipher;
 using Lab1.CipherInterface;
 
-namespace Lab1.Ciphers;
+namespace Lab1.CiphersController;
 
 public class CiphersController : ICiphersController
 {

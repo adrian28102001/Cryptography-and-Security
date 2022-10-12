@@ -1,5 +1,5 @@
 ﻿
-namespace Lab1.Ciphers;
+namespace Lab1.CiphersController;
 
 
 public interface ICiphersController
