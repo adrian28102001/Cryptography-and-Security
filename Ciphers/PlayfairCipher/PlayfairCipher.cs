@@ -49,7 +49,7 @@ public class PlayfairCipher : ICipher
         tempKey = tempKey.Substring(0, 25);
 
         for (var i = 0; i < 25; ++i)
-            keySquare[(i / 5), (i % 5)] = tempKey[i];
+            keySquare[i / 5, i % 5] = tempKey[i];
 
         return keySquare;
     }
@@ -70,20 +70,20 @@ public class PlayfairCipher : ICipher
 
     private static char[] SameRow(ref char[,] keySquare, int row, int col1, int col2, int encipher)
     {
-        return new[] {keySquare[row, Mod((col1 + encipher), 5)], keySquare[row, Mod((col2 + encipher), 5)]};
+        return new[] {keySquare[row, Mod(col1 + encipher, 5)], keySquare[row, Mod(col2 + encipher, 5)]};
     }
 
     private static char[] SameColumn(ref char[,] keySquare, int col, int row1, int row2, int encipher)
     {
-        return new[] {keySquare[Mod((row1 + encipher), 5), col], keySquare[Mod((row2 + encipher), 5), col]};
+        return new[] {keySquare[Mod(row1 + encipher, 5), col], keySquare[Mod(row2 + encipher, 5), col]};
     }
 
     private static char[] SameRowColumn(ref char[,] keySquare, int row, int col, int encipher)
     {
         return new[]
         {
-            keySquare[Mod((row + encipher), 5), Mod((col + encipher), 5)],
-            keySquare[Mod((row + encipher), 5), Mod((col + encipher), 5)]
+            keySquare[Mod(row + encipher, 5), Mod(col + encipher, 5)],
+            keySquare[Mod(row + encipher, 5), Mod(col + encipher, 5)]
         };
     }
 

@@ -28,7 +28,7 @@ public class VigenereCipher : ICipher
                 var keyIndex = (i - nonAlphaCharCount) % key.Length;
                 var k = (cIsUpper ? char.ToUpper(key[keyIndex]) : char.ToLower(key[keyIndex])) - offset;
                 k = encipher ? k : -k;
-                var ch = (char) ((Mod(((input[i] + k) - offset), 26)) + offset);
+                var ch = (char) (Mod(input[i] + k - offset, 26) + offset);
                 output += ch;
             }
             else

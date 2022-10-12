@@ -10,7 +10,7 @@ public class AffineCipher : IAffineCipher
         foreach(var c in chars)
         {
             var x = Convert.ToInt32(c - 65);
-            ciphertext += Convert.ToChar(((a * x + b) % 26) + 65);
+            ciphertext += Convert.ToChar((a * x + b) % 26 + 65);
         }
         return ciphertext;
     }
@@ -30,7 +30,7 @@ public class AffineCipher : IAffineCipher
             {
                 x += Convert.ToInt32(x) + 26;
             }
-            plaintext += Convert.ToChar(((aInvers * (x - b)) % 26) + 65);
+            plaintext += Convert.ToChar(aInvers * (x - b) % 26 + 65);
         }
         return plaintext;
     }
@@ -39,7 +39,7 @@ public class AffineCipher : IAffineCipher
     {
         for (var i = 1; i < 27; i++)
         {
-            if ((a * i) % 26 == 1)
+            if (a * i % 26 == 1)
             {
                 return i;
             }

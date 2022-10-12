@@ -8,7 +8,7 @@ public class CaesarCipher : ICaesarCipher
             return ch;
 
         var offset = char.IsUpper(ch) ? 'A' : 'a';
-        return (char) ((((ch + key) - offset) % 26) + offset);
+        return (char) ((ch + key - offset) % 26 + offset);
     }
 
     public string CipherType()
