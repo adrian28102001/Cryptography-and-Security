@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Symmetric_Cryptography.StreamCipher.RC4;
+namespace Lab1.StreamCipher.RC4;
 
 public class RC4 : IRC4
 {

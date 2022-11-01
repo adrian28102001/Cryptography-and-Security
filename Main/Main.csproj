@@ -8,8 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AsymmetricCipher\AsymmetricCipher.csproj" />
-      <ProjectReference Include="..\SymmetricCryptography\SymmetricCryptography.csproj" />
+      <ProjectReference Include="..\Ciphers\Ciphers.csproj" />
     </ItemGroup>
 
 </Project>

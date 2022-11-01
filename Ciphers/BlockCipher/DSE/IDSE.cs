@@ -1,7 +1,6 @@
-﻿using Lab1.CipherInterface;
-using Symmetric_Cryptography.Interface;
+﻿using Lab1.Interface;
 
-namespace Symmetric_Cryptography.BlockCipher.DSE;
+namespace Lab1.BlockCipher.DSE;
 
 public interface IDSE : IRunCipher
 {

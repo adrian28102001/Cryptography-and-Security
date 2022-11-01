@@ -1,13 +1,14 @@
-﻿using AsymmetricCipher;
+﻿
 using Lab1.AffineCipher;
+using Lab1.AsymmetricCipher;
+using Lab1.BlockCipher.DSE;
 using Lab1.CaesarCipher;
 using Lab1.CipherInterface;
 using Lab1.CiphersController;
+using Lab1.Control;
 using Lab1.PlayfairCipher;
+using Lab1.StreamCipher.RC4;
 using Lab1.VigenereCipher;
-using Symmetric_Cryptography.BlockCipher.DSE;
-using Symmetric_Cryptography.Control;
-using Symmetric_Cryptography.StreamCipher.RC4;
 
 namespace Main;
 

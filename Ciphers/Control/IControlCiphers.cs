@@ -1,4 +1,4 @@
-﻿namespace Symmetric_Cryptography.Control;
+﻿namespace Lab1.Control;
 
 public interface IControlCiphers
 {

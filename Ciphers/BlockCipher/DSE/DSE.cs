@@ -1,4 +1,4 @@
-﻿namespace Symmetric_Cryptography.BlockCipher.DSE;
+﻿namespace Lab1.BlockCipher.DSE;
 
 public class DSE : IDSE
 {

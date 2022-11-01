@@ -1,4 +1,4 @@
-﻿namespace Symmetric_Cryptography.Interface;
+﻿namespace Lab1.Interface;
 
 public interface IRunCipher
 {

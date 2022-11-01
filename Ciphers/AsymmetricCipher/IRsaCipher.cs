@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace AsymmetricCipher;
+namespace Lab1.AsymmetricCipher;
 
 public interface IRsaCipher
 {

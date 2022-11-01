@@ -1,7 +1,7 @@
-﻿using Symmetric_Cryptography.BlockCipher.DSE;
-using Symmetric_Cryptography.StreamCipher.RC4;
+﻿using Lab1.BlockCipher.DSE;
+using Lab1.StreamCipher.RC4;
 
-namespace Symmetric_Cryptography.Control;
+namespace Lab1.Control;
 
 public class ControlCipher : IControlCiphers
 {
