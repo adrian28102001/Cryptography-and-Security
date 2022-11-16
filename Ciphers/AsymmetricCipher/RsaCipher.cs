@@ -9,6 +9,7 @@ public class RsaCipher : IRsaCipher
     private readonly int _n;
     private readonly int _phi;
 
+    public RsaCipher(){}
     public RsaCipher(int x, int y)
     {
         _n = x * y;
