@@ -37,6 +37,10 @@ for unauthorized persons. So in order to have access to the ciphers, we have to 
 
 ![alt text](https://github.com/adrian28102001/Cryptography-and-Security/blob/main/Reports/Images/Register.png?raw=true)
 
+````csharp
+app.UseAuthentication();
+app.UseAuthorization();
+````
 
 After we did register, and passing password requirements for lenght, having capitals letters, we can now login.
 In order to login we need to pass the same username and password as previously used to register.
@@ -89,7 +93,6 @@ We do have a form, with 2 fields and a button and expects as input a string and 
 to Caesar algorithm
 
 ![alt text](https://github.com/adrian28102001/Cryptography-and-Security/blob/main/Reports/Images/CaesarDemo.png?raw=true)
-
 
 ````csharp
 
