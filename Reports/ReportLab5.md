@@ -35,14 +35,15 @@ for unauthorized persons. So in order to have access to the ciphers, we have to 
 
 ### Register and login
 
-![alt text](https://drive.google.com/file/d/15BSEZcvppUVHkUx96GrCopM4ul7qCODd/view?usp=sharing)
+![alt text](https://github.com/[adrian28102001]/[Cryptography-and-Security]/blob/[main]/register.png?raw=true)
+
 
 After we did register, and passing password requirements for lenght, having capitals letters, we can now login.
 In order to login we need to pass the same username and password as previously used to register.
 
 As soon as we press login, if everything matches, we will see the 2FA, in this case connected with google authentication
 app from my phone. Unfortunately, google's app privacy does not allow me to do a screenshot, so you have to believe me.
-![alt text](https://drive.google.com/file/d/1StydUWA6XwF0iBZSvYwsaNjJsr1erfxr/view?usp=sharing)
+![alt text](https://github.com/[adrian28102001]/[Cryptography-and-Security]/blob/[main]/2FA.png?raw=true)
 
 As I said, we need to provide the code from the app, which changes every 30 seconds, for security reasons.
 
@@ -51,7 +52,7 @@ initial, localhost:port, but now we see a different content. Because initially w
 redirected
 to login page.
 
-![alt text](https://drive.google.com/file/d/1tjmlTBFYZcgE5h61RNjjtKZJEE8KeoCR/view?usp=sharing)
+![alt text](https://github.com/[adrian28102001]/[Cryptography-and-Security]/blob/[main]/home.png?raw=true)
 
 We are restricted by the [Authorize] annotation which allows entering in the method only being logged in.
 
@@ -87,7 +88,8 @@ Note: all of the other ciphers can be easily be added ad this one in the example
 We do have a form, with 2 fields and a button and expects as input a string and an it, which will be used
 to Caesar algorithm
 
-![alt text](https://drive.google.com/file/d/1gp80jpa088sAIv9mtVu9lrdT2hS90ebC/view?usp=sharing)
+![alt text](https://github.com/[adrian28102001]/[Cryptography-and-Security]/blob/[main]/CaesarDemo.png?raw=true)
+
 
 ````csharp
 
@@ -107,7 +109,8 @@ to Caesar algorithm
 
 As soon as we provide necessary input values and do submit, we are redirected to another page where the result is
 
-![alt text](https://drive.google.com/file/d/1FkWX7pW3p_v6r7EwLbOOD8tQc9iW_ahI/view?usp=sharing)
+![alt text](https://github.com/[adrian28102001]/[Cryptography-and-Security]/blob/[main]/CaesarResult.png?raw=true)
+
 As we can see, the result is displayed here. As I said, we can have the list of all the ciphers from this year,
 so the user can protect his text and encrypt it on our website.
 
