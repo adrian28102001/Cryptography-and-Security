@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @using (Html.BeginForm("CaesarCipher", "Home", FormMethod.Post, new {enctype = "multipart/form-data"}))
+    {
+        <div>
+            <label for="Text">Text to encrypt:</label>
+            <input type="text" name="textToEncrypt" value="textToEncrypt"/>
+            <label for="Text">Key to encrypt:</label>
+            <input type="number" name="key" value="key"/>
+            <button type="submit" name="save" value="save" class="button">Caesar encryption</button>
+        </div>
+    }
+</div>

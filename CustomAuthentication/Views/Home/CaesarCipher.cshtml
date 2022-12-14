@@ -1,0 +1,10 @@
+﻿@model CaesarCipher
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h3>Your initial text was: @Model.Decrypted</h3>
+<h3>Your text encrypted: @Model.Encrypted</h3>
+@Html.ActionLink("Home", "Index", "Home")
