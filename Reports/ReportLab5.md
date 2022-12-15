@@ -29,7 +29,7 @@ that are implemented and maintained by the organization.
 
 ### Application run
 
-#Implementation steps
+# Implementation steps
 As soon as we ran the application, we can see that we are landed on log in page. This is because our content is hidden
 for unauthorized persons. So in order to have access to the ciphers, we have to firstly to pass Authentication step.
 
